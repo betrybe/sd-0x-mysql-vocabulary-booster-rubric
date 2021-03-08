@@ -18,14 +18,15 @@ Aqui você vai encontrar os detalhes de como estruturar o desenvolvimento do seu
 - [Entregáveis](#entregáveis)
   - [O que deverá ser desenvolvido](#o-que-deverá-ser-desenvolvido)
   - [Desenvolvimento](#desenvolvimento)
-  - [Instruções para restaurar os bancos de dados `w3schools` e `hr`](#instruções-para-restaurar-os-bancos-de-dados-w3schools-e-hr)
   - [Data de entrega](#data-de-entrega)
-- [Implementações técnicas](#implementações-técnicas)
 - [Instruções para entregar seu projeto](#instruções-para-entregar-seu-projeto)
   - [Antes de começar a desenvolver](#antes-de-começar-a-desenvolver)
   - [Durante o desenvolvimento](#durante-o-desenvolvimento)
-  - [Depois de terminar o desenvolvimento (opcional)](#depois-de-terminar-o-desenvolvimento-opcional)
+- [Como desenvolver](#como-desenvolver)
+    - [Instruções para restaurar os bancos de dados w3schools e hr](#instruções-para-restaurar-os-bancos-de-dados-w3schools-e-hr)
+    - [Implementações técnicas](#implementações-técnicas)
 - [Requisitos do projeto](#requisitos-do-projeto)
+- `Requisitos obrigatórios`
   - [Desafio 1](#desafio-1)
   - [Desafio 2](#desafio-2)
   - [Desafio 3](#desafio-3)
@@ -43,9 +44,12 @@ Aqui você vai encontrar os detalhes de como estruturar o desenvolvimento do seu
   - [Desafio 15](#desafio-15)
   - [Desafio 16](#desafio-16)
   - [Desafio 17](#desafio-17)
+- `Requisitos bônus`
   - [Desafio 18](#desafio-18)
   - [Desafio 19](#desafio-19)
   - [Desafio 20](#desafio-20)
+- [Depois de terminar o desenvolvimento (opcional)](#depois-de-terminar-o-desenvolvimento-opcional)
+- [Revisando um pull request](#revisando-um-pull-request)
 - [Avisos Finais](#avisos-finais)
 
 ---
@@ -80,7 +84,7 @@ Neste projeto, verificamos se voce é capaz de:
 
 # Entregáveis
 
-# O que deverá ser desenvolvido
+## O que deverá ser desenvolvido
 
 Hoje você fará um projeto com o codinome *Vocabulary Booster*, em que vai explorar todos os conceitos vistos até o momento sobre SQL.
 
@@ -108,46 +112,9 @@ SELECT * FROM hr.countries;
 5. Para entregar o seu projeto você deverá criar um _Pull Request_ neste repositório. Este _Pull Request_ deverá conter **na pasta raiz do projeto** os arquivos `desafio1.sql`, `desafio2.sql` e assim por diante até o `desafio16.sql`, que conterão seu código `SQL` de cada desafio obrigatório, respectivamente. Se você fizer desafio bônus, o seu _Pull Request_ também deverá conter o arquivo `desafio17.sql` (caso faça o desafio 17), `desafio18.sql` (caso faça o desafio 18) e o `desafio19.sql` (caso faça o desafio 19).
 Para criar vários arquivos de uma vez, utilize `touch desafio{1..X}.sql`
 
-## ⚠️ É importante que seus arquivos tenham exatamente estes nomes! ⚠️
+### ⚠️ É importante que seus arquivos tenham exatamente estes nomes! ⚠️
 
 Qualquer dúvida, procure a monitoria. Lembre-se que você pode consultar nosso conteúdo sobre [Git & GitHub](https://course.betrybe.com/intro/git/) sempre que precisar!
-
----
-
-
-# Instruções para restaurar os bancos de dados `w3schools` e `hr`
-
-1. Faça o download dos arquivos de backup [aqui](w3schools.sql) e [aqui](hr.sql) clicando em "Raw", depois clicando com botão direito e selecionando "Salvar como" para salvar os arquivos em seu computador.
-
-2. Abra o MySQL Workbench.
-
-3. Abra uma nova janela de query e cole dentro dela todo o conteúdo do arquivo `w3schools.sql`.
-
-4. Selecione todo o código com o atalho `CTRL-A` e clique no ícone de trovão para executar o script.
-
-    ![Restaurando o banco w3schools](images/restore_database_1.png)
-
-5. Aguarde alguns segundos (espere em torno de 30 segundos antes de tentar fazer algo).
-
-6. Clique no botão apontado na imagem a seguir para atualizar a listagem de banco de dados:
-
-    ![Tabelas do banco w3schools](images/refresh_databases.png)
-
-7. Verifique se o banco restaurado possui todas as seguintes tabelas:
-
-    ![Tabelas do banco w3schools](images/w3school.png)
-
-8. Clique com botão direito em cada tabela e selecione "Select Rows". Certifique-se de que todas as tabelas possuem registros. Se alguma estiver vazia ou ausente, faça o passo a seguir. Caso contrário, vá direto para o passo 10.
-
-9. Caso haja tabelas faltando, delete o banco de dados clicando com o botão direito em cima do banco de dados `w3schools` e selecione a opção `Drop Schema...`. Refaça os passos anteriores, desta vez aguardando um tempo maior quando executar o script de restauração.
-
-    ![Drop Schema](images/drop_schema.png)
-
-10. O mesmo processo mencionado anteriormente também deve ser feito para restaurar o banco `hr`. Verifique se o banco `hr` restaurado possui todas as tabelas indicadas na imagem abaixo. Se alguma estiver vazia ou ausente, faça o passo a seguir. Caso contrário, vá direto para a próxima seção.
-
-    ![Tabelas do banco hr](images/hr.png)
-
-11. Caso haja tabelas faltando, delete o banco de dados clicando com o botão direito em cima do banco de dados `hr` e selecione a opção `Drop Schema...`. Refaça o passo anterior, desta vez aguardando um tempo maior quando executar o script de restauração.
 
 ---
 
@@ -161,35 +128,17 @@ Qualquer dúvida, procure a monitoria. Lembre-se que você pode consultar nosso 
 
 ---
 
-## Implementações técnicas
-
-Para executar localmente os testes, é preciso escrever o seguinte no seu terminal:
-```sh
-MYSQL_USER=<SEU_NOME_DE_PESSOA_USUARIA> MYSQL_PASSWORD=<SUA SENHA> HOSTNAME=<NOME_DO_HOST> npm test
-```
-
-Ou seja, suponha que para poder acessar a base de dados feita neste projeto você tenha `root` como seu nome de pessoa usuária, `password` como senha e `localhost` como host. Logo, você executaria:
-```sh
-MYSQL_USER=root MYSQL_PASSWORD=password HOSTNAME=localhost npm test
-```
-
-Usando o exemplo anterior de base, suponha que você não tenha setado uma senha para `root`. Neste caso, você executaria:
-```sh
-MYSQL_USER=root MYSQL_PASSWORD= HOSTNAME=localhost npm test
-```
----
-
-## Instruções para entregar seu projeto:
+# Instruções para entregar seu projeto:
 
 ### ANTES DE COMEÇAR A DESENVOLVER:
 
 1. Clone o repositório
-  * `git clone https://github.com/tryber/sd-0x-mysql-vocabulary-booster-rubric.git`.
+  * `git clone https://github.com/tryber/sd-0x-mysql-vocabulary-booster.git`.
   * Entre na pasta do repositório que você acabou de clonar:
-    * `cd sd-0x-mysql-vocabulary-booster-rubric`
+    * `cd sd-0x-mysql-vocabulary-booster`
 
 2. Instale as dependências
-  * `npm install`
+  * `npm i` ou `npm install`
 
 3. Crie uma branch a partir da branch `master`
   * Verifique que você está na branch `master`
@@ -232,20 +181,60 @@ MYSQL_USER=root MYSQL_PASSWORD= HOSTNAME=localhost npm test
 
 ---
 
-### DEPOIS DE TERMINAR O DESENVOLVIMENTO (OPCIONAL)
+# Como desenvolver
 
-Para sinalizar que o seu projeto está pronto para o _"Code Review"_ de colegas, faça o seguinte:
+## Instruções para restaurar os bancos de dados `w3schools` e `hr`
 
-* Vá até a página **DO SEU** _Pull Request_, adicione a label de _"code-review"_ e marque as pessoas de quem quer receber o review:
+1. Faça o download dos arquivos de backup [aqui](w3schools.sql) e [aqui](hr.sql) clicando em "Raw", depois clicando com botão direito e selecionando "Salvar como" para salvar os arquivos em seu computador.
 
-  * No menu à direita, clique no _link_ **"Labels"** e escolha a _label_ **code-review**;
+2. Abra o MySQL Workbench.
 
-  * No menu à direita, clique no _link_ **"Assignees"** e escolha **o seu usuário**;
+3. Abra uma nova janela de query e cole dentro dela todo o conteúdo do arquivo `w3schools.sql`.
 
-  * No menu à direita, clique no _link_ **"Reviewers"** e digite `students`, selecione o time `tryber/students-sd-00`.
+4. Selecione todo o código com o atalho `CTRL-A` e clique no ícone de trovão para executar o script.
 
-Caso tenha alguma dúvida, [aqui tem um video explicativo](https://vimeo.com/362189205).
+    ![Restaurando o banco w3schools](images/restore_database_1.png)
 
+5. Aguarde alguns segundos (espere em torno de 30 segundos antes de tentar fazer algo).
+
+6. Clique no botão apontado na imagem a seguir para atualizar a listagem de banco de dados:
+
+    ![Tabelas do banco w3schools](images/refresh_databases.png)
+
+7. Verifique se o banco restaurado possui todas as seguintes tabelas:
+
+    ![Tabelas do banco w3schools](images/w3school.png)
+
+8. Clique com botão direito em cada tabela e selecione "Select Rows". Certifique-se de que todas as tabelas possuem registros. Se alguma estiver vazia ou ausente, faça o passo a seguir. Caso contrário, vá direto para o passo 10.
+
+9. Caso haja tabelas faltando, delete o banco de dados clicando com o botão direito em cima do banco de dados `w3schools` e selecione a opção `Drop Schema...`. Refaça os passos anteriores, desta vez aguardando um tempo maior quando executar o script de restauração.
+
+    ![Drop Schema](images/drop_schema.png)
+
+10. O mesmo processo mencionado anteriormente também deve ser feito para restaurar o banco `hr`. Verifique se o banco `hr` restaurado possui todas as tabelas indicadas na imagem abaixo. Se alguma estiver vazia ou ausente, faça o passo a seguir. Caso contrário, vá direto para a próxima seção.
+
+    ![Tabelas do banco hr](images/hr.png)
+
+11. Caso haja tabelas faltando, delete o banco de dados clicando com o botão direito em cima do banco de dados `hr` e selecione a opção `Drop Schema...`. Refaça o passo anterior, desta vez aguardando um tempo maior quando executar o script de restauração.
+
+---
+
+## Implementações técnicas
+
+Para executar localmente os testes, é preciso escrever o seguinte no seu terminal:
+```sh
+MYSQL_USER=<SEU_NOME_DE_PESSOA_USUARIA> MYSQL_PASSWORD=<SUA SENHA> HOSTNAME=<NOME_DO_HOST> npm test
+```
+
+Ou seja, suponha que para poder acessar a base de dados feita neste projeto você tenha `root` como seu nome de pessoa usuária, `password` como senha e `localhost` como host. Logo, você executaria:
+```sh
+MYSQL_USER=root MYSQL_PASSWORD=password HOSTNAME=localhost npm test
+```
+
+Usando o exemplo anterior de base, suponha que você não tenha setado uma senha para `root`. Neste caso, você executaria:
+```sh
+MYSQL_USER=root MYSQL_PASSWORD= HOSTNAME=localhost npm test
+```
 ---
 
 # Requisitos do projeto
@@ -638,6 +627,29 @@ Chamando-a dessa forma, sua procedure deve mostrar que a pessoa funcionária `Ne
 
 ---
 
+# Depois de terminar o desenvolvimento (opcional)
+
+Para sinalizar que o seu projeto está pronto para o _"Code Review"_ de colegas, faça o seguinte:
+
+* Vá até a página **DO SEU** _Pull Request_, adicione a label de _"code-review"_ e marque as pessoas de quem quer receber o review:
+
+  * No menu à direita, clique no _link_ **"Labels"** e escolha a _label_ **code-review**;
+
+  * No menu à direita, clique no _link_ **"Assignees"** e escolha **o seu usuário**;
+
+  * No menu à direita, clique no _link_ **"Reviewers"** e digite `students`, selecione o time `tryber/students-sd-00`.
+
+Caso tenha alguma dúvida, [aqui tem um video explicativo](https://vimeo.com/362189205).
+
+---
+
+# Revisando um pull request
+
+Use o conteúdo sobre [Code Review](https://course.betrybe.com/real-life-engineer/code-review/) para te ajudar a revisar os _Pull Requests_.
+
+\#VQV 🚀
+
+---
 
 # Avisos Finais
 
