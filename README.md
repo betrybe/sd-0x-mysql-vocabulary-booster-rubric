@@ -27,27 +27,29 @@ Aqui você vai encontrar os detalhes de como estruturar o desenvolvimento do seu
     - [Implementações técnicas](#implementações-técnicas)
 - [Requisitos do projeto](#requisitos-do-projeto)
 - `Requisitos obrigatórios`
-  - [Desafio 1](#desafio-1)
-  - [Desafio 2](#desafio-2)
-  - [Desafio 3](#desafio-3)
-  - [Desafio 4](#desafio-4)
-  - [Desafio 5](#desafio-5)
-  - [Desafio 6](#desafio-6)
-  - [Desafio 7](#desafio-7)
-  - [Desafio 8](#desafio-8)
-  - [Desafio 9](#desafio-9)
-  - [Desafio 10](#desafio-10)
-  - [Desafio 11](#desafio-11)
-  - [Desafio 12](#desafio-12)
-  - [Desafio 13](#desafio-13)
-  - [Desafio 14](#desafio-14)
-  - [Desafio 15](#desafio-15)
-  - [Desafio 16](#desafio-16)
-  - [Desafio 17](#desafio-17)
+  - [1 - Exiba os países e indicando se cada um deles se encontra ou não na região formada pela Europa](#1-exiba-os-países-e-indicando-se-cada-um-deles-se-encontra-ou-não-na-região-formada-pela-europa)
+  - [2 - Exiba os cargos com seu nível de renumeração associado, com base no salário máximo do cargo](#2-exiba-os-cargos-com-seu-nível-de-renumeração-associado-com-base-no-salário-máximo-do-cargo)
+  - [3 - Exiba os cargos com a diferença entre seus salários máximo e mínimo](#3-exiba-os-cargos-com-a-diferença-entre-seus-salários-máximo-e-mínimo)
+  - [4 - Exiba a média salarial e o nível de senioridade de todas as pessoas empregadas, agrupadas pelo cargo](#4-exiba-a-média-salarial-e-o-nível-de-senioridade-de-todas-as-pessoas-empregadas-agrupadas-pelo-cargo)
+  - [5 - Exiba os cargos com sua variação salarial e suas médias máxima e mínima mensal, considerando salários máximo e minímo como anuais](#5-exiba-os-cargos-com-sua-variação-salarial-e-suas-médias-máxima-e-mínima-mensal-considerando-salários-máximo-e-minímo-como-anuais)
+  - [6 - Faça um relatório que mostra o histórico de cargos das pessoas empregadas](#6-faça-um-relatório-que-mostra-o-histórico-de-cargos-das-pessoas-empregadas)
+  - [7 - Faça um relatório que mostra o histórico de cargos das pessoas empregadas que iniciaram seus cargos nos meses de janeiro, fevereiro ou março](#7-faça-um-relatório-que-mostra-o-histórico-de-cargos-das-pessoas-empregadas-que-iniciaram-seus-cargos-nos-meses-de-janeiro-fevereiro-ou-março)
+  - [8 - Exibe todas as pessoas consumidoras cujos pedidos já foram enviados pelas empresas Speedy Express ou United Package](#8-exibe-todas-as-pessoas-consumidoras-cujos-pedidos-já-foram-enviados-pelas-empresas-speedy-express-ou-united-package)
+  - [9 - Exibe todos as pessoas funcionárias que já realizaram algum pedido, mostrando também seu total de pedidos feitos](#9-exibe-todos-as-pessoas-funcionárias-que-já-realizaram-algum-pedido-mostrando-também-seu-total-de-pedidos-feitos)
+  - [10 - Exibe todos os produtos que já foram pedidos, que possuem uma média de quantidade nos pedidos registrados acima de 20.00](#10-exibe-todos-os-produtos-que-já-foram-pedidos-que-possuem-uma-média-de-quantidade-nos-pedidos-registrados-acima-de-2000)
+  - [11 - Exibe todas as pessoas clientes que possuem compatriotas, mostrando a quantidade de compatriotas para cada pessoa cliente](#11-exibe-todas-as-pessoas-clientes-que-possuem-compatriotas-mostrando-a-quantidade-de-compatriotas-para-cada-pessoa-cliente)
+  - [12 - Faça um relatório que lista todas as pessoas funcionárias que possuem o mesmo cargo](#12-faça-um-relatório-que-lista-todas-as-pessoas-funcionárias-que-possuem-o-mesmo-cargo)
+  - [13 - Exibe todos produtos que já tiveram um pedido associado requerindo uma quantidade desse produto maior que 80](#13-exibe-todos-produtos-que-já-tiveram-um-pedido-associado-requerindo-uma-quantidade-desse-produto-maior-que-80)
+  - [14 - Considerando o conjunto formado pelas pessoas consumidoras e empresas fornecedoras de produtos, queremos saber quais são os cinco primeiros países distintos, em ordem alfabética, presentes nesse conjunto](#14-considerando-o-conjunto-formado-pelas-pessoas-consumidoras-e-empresas-fornecedoras-de-produtos-queremos-saber-quais-são-os-cinco-primeiros-países-distintos-em-ordem-alfabética-presentes-nesse-conjunto)
+  - [15 - Crie uma procedure chamada buscar_media_por_cargo que recebe como parâmetro o nome de um cargo e em retorno deve mostrar a média salarial de todas as pessoas que possuem esse cargo](#15-crie-uma-procedure-chamada-buscar_media_por_cargo-que-recebe-como-parâmetro-o-nome-de-um-cargo-e-em-retorno-deve-mostrar-a-média-salarial-de-todas-as-pessoas-que-possuem-esse-cargo)
+  - [16 - Crie uma função chamada buscar_quantidade_de_empregos_por_funcionario no banco de dados hr que, ao receber o email de uma pessoa funcionária, retorne a quantidade de empregos presentes em seu histórico](#16-crie-uma-função-chamada-buscar_quantidade_de_empregos_por_funcionario-no-banco-de-dados-hr-que-ao-receber-o-email-de-uma-pessoa-funcionária-retorne-a-quantidade-de-empregos-presentes-em-seu-histórico)
+  - [17 - Crie uma TRIGGER que, a cada nova inserção realizada na tabela orders, insira automaticamente a data atual na coluna OrderDate](#17-crie-uma-trigger-que-a-cada-nova-inserção-realizada-na-tabela-orders-insira-automaticamente-a-data-atual-na-coluna-orderdate)
+
 - `Requisitos bônus`
-  - [Desafio 18](#desafio-18)
-  - [Desafio 19](#desafio-19)
-  - [Desafio 20](#desafio-20)
+
+  - [18 - Faça um relatório que mostra o histórico de cargos das pessoas empregadas, mostrando as datas de início e de saída, assim como os anos que ela ficou nesse cargo](#18-faça-um-relatório-que-mostra-o-histórico-de-cargos-das-pessoas-empregadas-mostrando-as-datas-de-início-e-de-saída-assim-como-os-anos-que-ela-ficou-nesse-cargo)
+  - [19 - Crie uma função chamada exibir_quantidade_pessoas_contratadas_por_mes_e_ano no banco de dados hr que, dados o mês e ano como parâmetros nessa ordem, retorna a quantidade de pessoas funcionárias que foram contratadas nesse mês e ano](#19-crie-uma-função-chamada-exibir_quantidade_pessoas_contratadas_por_mes_e_ano-no-banco-de-dados-hr-que-dados-o-mês-e-ano-como-parâmetros-nessa-ordem-retorna-a-quantidade-de-pessoas-funcionárias-que-foram-contratadas-nesse-mês-e-ano)
+  - [20 - Toda pessoa funcionária no banco hr possui um histórico completo de cargos.](#20-toda-pessoa-funcionária-no-banco-hr-possui-um-histórico-completo-de-cargos-logo-crie-uma-procedure-chamada-exibir_historico_completo_por_funcionario-que-dado-o-e-mail-de-uma-pessoa-funcionária-retorna-todos-os-cargos-em-seu-histórico)
 - [Depois de terminar o desenvolvimento (opcional)](#depois-de-terminar-o-desenvolvimento-opcional)
 - [Revisando um pull request](#revisando-um-pull-request)
 - [Avisos Finais](#avisos-finais)
@@ -239,11 +241,11 @@ MYSQL_USER=root MYSQL_PASSWORD= HOSTNAME=localhost npm test
 
 # Requisitos do projeto
 
-## Desafio 1
+## 1 - Exiba os países e indicando se cada um deles se encontra ou não na região formada pela Europa
 
 Crie uma query que mostre se o país pertence ou não à região `"Europe"`.
 
->Use o banco `hr` como referência 
+> Use o banco `hr` como referência 
 
 Seu relatório deve apresentar 02 colunas:
 
@@ -255,7 +257,7 @@ Os resultados devem estar ordenados pelo nome do país em ordem alfabética.
 
 ---
 
-## Desafio 2
+## 2 - Exiba os cargos com seu nível de renumeração associado, com base no salário máximo do cargo
 
 Categorize o nível de remuneração de cada cargo.
 
@@ -279,7 +281,7 @@ Os resultados devem estar ordenados pelo nome do cargo em ordem alfabética.
 
 ---
 
-## Desafio 3
+## 3 - Exiba os cargos com a diferença entre seus salários máximo e mínimo
 
 Crie uma query que exiba 02 colunas:
 
@@ -295,7 +297,7 @@ Em caso de empate nessa diferença os resultados devem ser ordenados pelo nome d
 
 ---
 
-## Desafio 4
+## 4 - Exiba a média salarial e o nível de senioridade de todas as pessoas empregadas, agrupadas pelo cargo
 
 Obtenha informações a respeito **dos salários das pessoas empregadas**.
 
@@ -325,7 +327,7 @@ Em caso de empate na média, os resultados devem ser ordenados pelo nome do carg
 
 ---
 
-## Desafio 5
+## 5 - Exiba os cargos com sua variação salarial e suas médias máxima e mínima mensal, considerando salários máximo e minímo como anuais
 
 ⚠️ Considere os salários máximo e mínimo de um cargo como salários anuais. ⚠️
 
@@ -347,7 +349,7 @@ Em caso de empate na variação, os resultados devem ser ordenados pelo nome do 
 
 ---
 
-## Desafio 6
+## 6 - Faça um relatório que mostra o histórico de cargos das pessoas empregadas
 
 Faça um relatório que mostra o **histórico de cargos das pessoas empregadas**. 
 
@@ -369,7 +371,7 @@ Em caso de empate no nome completo, ordene os resultados pelo nome do cargo em o
 
 ---
 
-## Desafio 7
+## 7 - Faça um relatório que mostra o histórico de cargos das pessoas empregadas que iniciaram seus cargos nos meses de janeiro, fevereiro ou março
 
 Faça um relatório que mostre o **histórico de cargos das pessoas empregadas** que iniciaram seus cargos nos meses de janeiro, fevereiro ou março.
 
@@ -389,7 +391,7 @@ Em caso de empate no nome completo, ordene os resultados pela data de início qu
 
 ---
 
-## Desafio 8
+## 8 - Exibe todas as **pessoas consumidoras** cujos pedidos já foram enviados pelas empresas `"Speedy Express"` ou `"United Package"`
 
 Exiba todas as **pessoas consumidoras** cujos pedidos já foram enviados pelas empresas `"Speedy Express"` ou `"United Package"`.
 
@@ -411,7 +413,7 @@ Se houver empresas com o mesmo nome, ordene os resultados pela data do pedido em
 
 ---
 
-## Desafio 9
+## 9 - Exibe todos as pessoas funcionárias que já realizaram algum pedido, mostrando também seu total de pedidos feitos
 
 Exiba todas as pessoas funcionárias que já realizaram algum pedido e o total dos pedidos feitos.
 
@@ -427,11 +429,11 @@ Ordene seus resultados pelo total de pedidos em ordem crescente.
 
 ---
 
-## Desafio 10
+## 10 - Exibe todos os produtos que já foram pedidos, que possuem uma média de quantidade nos pedidos registrados acima de `20.00`
 
 Exiba todos os produtos que já foram pedidos e que possuem uma média de quantidade nos pedidos registrados acima de `20.00`.
 
->Use o banco `w3schools` como referência
+> Use o banco `w3schools` como referência
 
 Monte uma query que exiba 04 colunas:
 
@@ -449,7 +451,7 @@ Em caso de empate na média, os resultados devem ser ordenados pelo nome do prod
 
 ---
 
-## Desafio 11
+## 11 - Exibe todas as pessoas clientes **que possuem compatriotas**, mostrando a quantidade de compatriotas para cada pessoa cliente
 
 Exiba todas as pessoas clientes **que possuem compatriotas**.
 
@@ -481,11 +483,11 @@ Os resultados devem estar ordenados pelo nome de contato da pessoa cliente em or
 
 ---
 
-## Desafio 12
+## 12 - Faça um relatório que lista todas as pessoas funcionárias **que possuem o mesmo cargo**
 
 Faça um relatório que lista todas as pessoas funcionárias **que possuem o mesmo cargo**.
 
->Use o banco `hr` como referência
+> Use o banco `hr` como referência
 
 Suponha que haja somente 03 pessoas funcionárias, `João`, `Maria` e `Alex`, e:
 
@@ -515,11 +517,11 @@ Em caso de empate, os resultados devem ser ordenados pela coluna **Nome completo
 
 ---
 
-## Desafio 13
+## 13 - Exibe todos produtos **que já tiveram um pedido associado requerindo uma quantidade desse produto maior que 80**
 
 Exiba todos os produtos **que já tiveram um pedido associado requerindo uma quantidade desse produto maior que 80**. 
 
->Use o banco `w3schools` como referência
+> Use o banco `w3schools` como referência
 
 Monte uma query que exiba 02 colunas:
 
@@ -531,17 +533,17 @@ Os resultados devem estar ordenados pelo nome do produto em ordem alfabética.
 
 ---
 
-## Desafio 14
+## 14 - Considerando o conjunto formado pelas pessoas consumidoras e empresas fornecedoras de produtos, queremos saber quais são os cinco primeiros países distintos, em ordem alfabética, presentes nesse conjunto
 
 Exiba os 05 primeiros países distintos dentre as pessoas consumidoras e as empresas fornecedoras, em ordem alfabética.
 
->Use o banco `w3schools` como referência
+> Use o banco `w3schools` como referência
 
 Monte uma query que exiba 01 coluna com o alias "**País**" contendo o nome do país.
 
 ---
 
-## Desafio 15
+## 15 - Crie uma procedure chamada `buscar_media_por_cargo` que recebe como parâmetro o nome de um cargo e em retorno deve mostrar a média salarial de todas as pessoas que possuem esse cargo
 
 Crie uma procedure chamada `buscar_media_por_cargo` que recebe como parâmetro o nome de um cargo e em retorno deve mostrar a média salarial de todas as pessoas que possuem esse cargo.
 
@@ -557,7 +559,7 @@ Chamando-a dessa forma, sua procedure deve retornar `5760.00` como média salari
 
 ---
 
-## Desafio 16
+## 16 - Crie uma função chamada `buscar_quantidade_de_empregos_por_funcionario` no banco de dados `hr` que, ao receber o **email de uma pessoa funcionária**, retorne a quantidade de empregos **presentes em seu histórico**
 
 Crie uma função chamada `buscar_quantidade_de_empregos_por_funcionario` que, ao receber o **email de uma pessoa funcionária**, retorne a quantidade de empregos **presentes em seu histórico**.
 
@@ -567,7 +569,7 @@ Confirme que sua função retorna o valor `2` ao ser chamada passando uma pessoa
 
 ---
 
-## Desafio 17
+## 17 - Crie uma TRIGGER que, a cada nova inserção realizada na tabela `orders`, insira automaticamente a data atual na coluna `OrderDate`
 
 Crie uma TRIGGER que, a cada nova inserção realizada na tabela `orders`, insira automaticamente a data atual na coluna `OrderDate`.
 
@@ -585,7 +587,7 @@ Retomando que não é necessário incluir as queries para INSERIR e SELECIONAR, 
 
 ## BÔNUS:
 
-### Desafio 18
+### 18 - Faça um relatório que mostra o **histórico de cargos das pessoas empregadas**, mostrando as datas de início e de saída, assim como os anos que ela ficou nesse cargo
 
 Faça um relatório que mostra o **histórico de cargos das pessoas empregadas**, mostrando as datas de início e de saída, assim como os anos que ela ficou nesse cargo. Para isso, usando o banco `hr` como referência, monte uma query que exiba quatro colunas:
 
@@ -601,13 +603,13 @@ Os resultados devem estar ordenados pelo nome completo das pessoas empregadas em
 
 ---
 
-### Desafio 19
+### 19 - Crie uma função chamada `exibir_quantidade_pessoas_contratadas_por_mes_e_ano` no banco de dados `hr` que, dados o mês e ano como parâmetros nessa ordem, retorna a quantidade de pessoas funcionárias **que foram contratadas** nesse mês e ano
 
 Crie uma função chamada `exibir_quantidade_pessoas_contratadas_por_mes_e_ano` no banco de dados `hr` que, dados o mês e ano como parâmetros nessa ordem, retorna a quantidade de pessoas funcionárias **que foram contratadas** nesse mês e ano. Confirme que sua função retorna o valor `14` ao ser chamada passando os números `6` e `1987` para mês e ano, respectivamente.
 
 ---
 
-### Desafio 20
+### 20 - Toda pessoa funcionária no banco `hr` possui um histórico completo de cargos. Logo, crie uma procedure chamada `exibir_historico_completo_por_funcionario` que, dado o e-mail de uma pessoa funcionária, retorna todos os cargos em seu histórico
 
 Toda pessoa funcionária no banco `hr` possui um histórico completo de cargos. Logo, crie uma procedure chamada `exibir_historico_completo_por_funcionario` que, dado o e-mail de uma pessoa funcionária, retorna todos os cargos em seu histórico. Sua procedure deve retornar três colunas:
 
